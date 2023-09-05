@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1{
+            display: block; /*caso eu queirav tranformar espaço em linha 'inline' coloque inline*/
+            /*Quando usamos o inline nao pdemos por largura e altura*/
+            /*se em block ele ocupa todo espaço da linha da pagina por padrao
+            ou sejamesmo que e junto de algo em line se e block ele pula uma linha e ocupa todo a quele espalo*/
+            /*Existe tambemo inline block que nos da como se fosse inline em linha mas comcaracteristicas de block como largura e altura*/
+            background-color: lightgray;
+            width: 300px;
+            height: 300px;
+            border-width: 10px;  /*é a espesura da borda*/
+            border-style: solid;
+            border-color: black;
+            border: 10px solid black; /*Esse borde substitui is border de cima*/
+            padding-top: 39px;
+            padding-bottom: 39px;
+            padding-right: 39px;
+            padding-left: 39px;
+            padding: 39px 39px 39px 39px; /*Esse padinh sybstitui os de cima*/
+            margin: auto; /*deixe no meio lembrando que é' ym espaço*/
+            outline-width: 6px;
+            outline-style: dashed;
+            outline-color: aqua;
+            /*outline Esta dentro da margin*/
+            /*margin tambem pode ser resumido*/
+            /*Pading com dois valores, representa cima e baixo com 4 representa cima diretita baixo esquerda*/
+        }
+        a{
+            border-width: 4px;
+            border-style: solid;
+            border-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de elementos</h1>
+    <p>Lorem ipsum dolor sit amet <a href="#">consectetur</a> adipisicing elit. Ducimus magni, alias doloremque porro sunt corrupti facere! Enim eos earum voluptatem error, velit pariatur sapiente! Magni suscipit omnis blanditiis laudantium totam!</p>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping of tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(144, 140, 140);
+            padding: 10px;
+        }
+        header{
+            background-color: cornflowerblue;
+            padding: 10px;
+            margin: 10px;
+        }
+        main{
+            background-color: cornflowerblue;
+            padding: 10px;
+            margin: 10px;  
+            border-radius: 15px 30px 5px 19px;
+            /*Caso voce adicione apenas dois valores em boder radius voce com o primeiro valor vai estar alterando cima-esquerda e baixo-direita O com o segundo baixo-esquerda e cima-direita*/
+        }
+        article{
+            background-color: lightgray;
+        }
+        nav{
+            background-color: lightgray;
+            padding: 3px;
+            /*existe sombra de dentro inside e de fora outside. no caso outside caso queira inside e so por inside no começo*/
+            box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.274); /*Sombra de caixa*/
+        }
+        h2{
+            box-shadow: inset -3px 3px 5px rgba(0, 0, 0, 0.603);
+            margin: 10px;
+        }
+        nav > a {
+            color:  black;
+            font-weight: bold;
+            text-decoration: none;
+            margin-right: 30px;
+            border: 3px solid #060505;
+        }
+        nav a:hover{
+            text-decoration: underline;
+        }
+
+        article > aside{
+            background-color: chartreuse;
+        }
+        /*Lembre que paragrafos e titulos tem tamanhos padroes e isso pode ocorrer erros */
+        footer{
+            background-color: black;
+            color: aquamarine;
+            padding: 10px;
+            text-align: center;
+            margin: 0px;
+        }
+        footer > p{
+            margin: 0;
+        }
+        .bola{
+            width: 100px;
+            height: 100px;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Tags semanticas ;  isso facilita para o mecanismo de busca valoriza o site -->
+    <header><!--cabeçalho-->
+        <nav> <!--Para links sao os menus de navegaçao -->
+            <a href="@">a</a>
+            <a href="@">b</a>
+            <a href="@">c</a>
+        </nav>
+    </header>
+    <main> <!-- Conteudo pricipal do site. -->
+        <section>
+            <P>Tecnologia esporte Turismo</P>
+        </section>
+        <section> <!--Seçao de conteudo-->
+            <article> <!--Noticias exemplo-->
+                <h2>--Noticias</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum obcaecati placeat recusandae delectus quis libero ratione suscipit reiciendis! Tempore, odio sed adipisci impedit at temporibus magni ut laboriosam explicabo vero?</p>
+                <aside> <!--Ligado ou relacionado ao article proxima periferico--> 
+                    <p>artico escrito pelo lucas</p>
+                </aside>
+            </article>
+
+        </section>
+        <footer> <!--Roda Pé-->
+            <p>desenvolvido</p>
+        </footer>
+    </main>
+    <!--voce pode por qualquer tag dentro de outras tags-->
+    <!--Tanto class e id nao podem possuir numeros como primeiro caractere-->
+    <div class="bola"></div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+p{
+    text-align: justify; /*ageita o texto para que estaja alinhado no final do paragrafo*/
+}
+body{
+    background-image: linear-gradient(to right, #3f8b38, #295c25);
+    /*No font family tenta le impact se nao tiver ele passa pro proximo no caso haettenschweiler depois arial depois font sem serif*/
+    font-family: 'work Sans', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+    /*Medidas absolutas
+    cm, mm, in, px, pt, pc*/
+
+    /*Medidas relativas
+    em, ex, vw (porcentagen da lagura da view port), vh (porcentagen da altura da view port), %*/
+
+    /*Um 'em' vai dar 16px dois em vai dar 32px 0,5em = 8px*/
+    
+    /*Use PX E em*/
+
+    font-weight: 800; /*Peso da fonte(lighter, normal, bold, bolder or 100-900)*/
+    font-style: italic;
+}    
+main{
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 10px 10px 20px #000000;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+
+h1{
+    color: black;
+    text-align: center;
+    text-shadow: 3px 3px 3px #49abd4;
+    /*o font simplifica 1-fontstyle 2-fontweight, 3-font size, 4-fontfamily*/
+    font: italic bolder 3em 'work Sans', 'sans serif';
+}
+
+h2{
+    color: blueviolet;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+        # = id
+        . = class
+        : = pseudo class
+        :: pseudo elemento
+        > = children*/
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: chartreuse;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: darkgreen;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: #ebef25; /*Logo depois que for clicado*/
+        }
+        a::before{
+            content: ' <== ';
+        }
+        a::after{
+            content: ' ==> ';
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com">githb</a></li>
+        <li><a href="google.com">gogle</a></li>
+        <li><a href="https://pt.wikipedia.org/">wikipedia</a></li>
+    </ul>
+</body>
+</html>

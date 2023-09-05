@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/*Só Podemos um id no codigo html*/
+body{
+background-color: aquamarine;
+font-family: Arial, Helvetica, sans-serif;
+}
+h1#first{ /*herda as configuraçoes do h1 e aplica mais algumas com o first*/
+    background-color: black;
+    color: forestgreen;
+    text-align: center;
+}
+h2{
+    color: darkgreen;
+}
+.sef{
+    background-color: rgb(200, 50, 30);
+}
+.color{
+    color: blue;
+}
+.destaque{
+    background-color: darkorange;
+}
